@@ -1,8 +1,3 @@
-![GitHub contributors](https://img.shields.io/github/contributors/adarsh-goel/filestreambot-pro?style=flat&color=green)
-![GitHub repo size](https://img.shields.io/github/repo-size/adarsh-goel/filestreambot-pro?color=green)
-![GitHub](https://img.shields.io/github/license/adarsh-goel/filestreambot-pro?color=green)
-
-
 <h1 align="center"></h1>
 <p align="center"> 
   <img src="https://socialify.git.ci/adarsh-goel/filestreambot-pro/image?description=1&descriptionEditable=A%20very%20fast%20file%20streaming%20bot%20used%20for%20streaming%20and%20downloading%20movies&font=Source%20Code%20Pro&forks=1&issues=1&language=1&logo=https%3A%2F%2Fuser-images.githubusercontent.com%2F88939380%2F137127129-a86fc939-2931-4c66-b6f6-b57711a9eab7.png&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark" alt="Cover Image" width="650">
@@ -22,7 +17,7 @@
 <hr>
 
 ## Please Follow me so you know whenever I release a new Project!❤️‍🔥
-### Incase you are having trouble deploying bot you may hire developer we have reasonable rates [click here](https://t.me/+KvjFjOWicuZmOTQx)
+### Incase you are having trouble deploying bot you may hire developer we have reasonable rates [click here](https://t.me/greymatters_bots_discussion)
 
 ## 🍁 About This Bot :
 
