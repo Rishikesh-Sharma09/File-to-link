@@ -17,8 +17,7 @@
 <hr>
 
 ## Please Follow me so you know whenever I release a new Project!❤️‍🔥
-### Incase you are having trouble deploying bot you may hire developer we have reasonable rates [click here](https://t.me/greymatters_bots_discussion)
-
+## [Tutorial Video](https://youtu.be/u773hq1tGiA)
 ## 🍁 About This Bot :
 
 ![streamingfilestreambot-professional-live_1](https://user-images.githubusercontent.com/88939380/137127129-a86fc939-2931-4c66-b6f6-b57711a9eab7.png)
