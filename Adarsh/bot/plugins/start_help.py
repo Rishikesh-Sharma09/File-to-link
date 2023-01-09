@@ -128,7 +128,7 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("💁‍♂️ Owner", url="https://github.com/GreyMattersBot")],
+                [InlineKeyboardButton("💁‍♂️ Owner", url="https://github.com/Adarsh-Goel")],
                 [InlineKeyboardButton("💥 Source Code", url="https://github.com/Greymattersbot/Filestreambot-pro")]
             ]
         )
