@@ -1,4 +1,6 @@
 # (c) adarsh-goel 
+# (c) Rishikesh-Sharma09
+
 from Adarsh.bot import StreamBot
 from Adarsh.vars import Var
 import logging
@@ -128,8 +130,8 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("💁‍♂️ Owner", url="https://github.com/Adarsh-Goel")],
-                [InlineKeyboardButton("💥 Source Code", url="https://github.com/Greymattersbot/Filestreambot-pro")]
+                [InlineKeyboardButton("💁‍♂️ Owner", url="t.me/Rk_botowner")],
+                [InlineKeyboardButton("💥 Support Us", url="t.me/Rk_botz")]
             ]
         )
     )
