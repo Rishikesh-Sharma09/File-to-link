@@ -1,4 +1,4 @@
-
+## <h1> There is two branches in this repository with name link shortner and without link shortner. No need to explain more you got to know with name what the difference in both branches 😊 </h1>
 
 ## Please Follow me so you know whenever I release a new Project!❤️‍🔥
 ## 🍁 About This Bot :
