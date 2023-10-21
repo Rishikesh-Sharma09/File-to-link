@@ -1,4 +1,6 @@
+## <h1> There is two branches in this repository with name link shortner and without link shortner. No need to explain more you got to know with name what the difference in both branches 😊 </h1>
 
+## <h1> 👉 Please fork and give star 🌟 </h1>
 
 ## Please Follow me so you know whenever I release a new Project!❤️‍🔥
 ## 🍁 About This Bot :
@@ -64,8 +66,8 @@ then goto the <a href="#mandatory-vars">variables tab</a> for more info on setti
 ```py
 apt install git
 apt install python3-pip
-git clone https://github.com/Greymattersbot/Filestreambot-pro
-cd Filestreambot-pro
+git clone https://github.com/Rishikesh-Sharma09/File-to-link
+cd File-to-link
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
