@@ -79,16 +79,16 @@ import logging
      result += f'{seconds}s' 
      return result 
   
+URL_SHORTENR_WEBSITE = "onepagelink.in" 
+URL_SHORTNER_WEBSITE_API = "c47e1c4469c0a66e74af73153cb8f4d3b304d010" 
   
  async def get_shortlink(link): 
      https = link.split(":")[0] 
      if "http" == https: 
          https = "https" 
          link = link.replace("http", https) 
-     URL = Var.URL_SHORTENR_WEBSITE 
-     API = Var.URL_SHORTNER_WEBSITE_API 
-     url = f'https://{URL}/api' 
-     params = {'api': API, 
+     url = f'https://{URL_SHORTENR_WEBSITE}/api' 
+     params = {'api': URL_SHORTNER_WEBSITE_API, 
                'url': link, 
                } 
   
@@ -100,8 +100,9 @@ import logging
                      return data['shortenedUrl'] 
                  else: 
                      logger.error(f"Error: {data['message']}") 
-                     return f'https://{URL}/api?api={API}&link={link}' 
+                     return f'https://{URL_SHORTENR_WEBSITE}/api?api={URL_SHORTNER_WEBSITE_API}&link={link}' 
   
      except Exception as e: 
          logger.error(e) 
-         return f'{URL}/api?api={API}&link={link}'
+         return f'{URL_SHORTENR_WEBSITE}/api?api={URL_SHORTNER_WEBSITE_API}&link={link}'  
+ 
