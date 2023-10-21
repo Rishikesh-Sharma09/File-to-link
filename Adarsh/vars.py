@@ -37,10 +37,7 @@ class Var(object):
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', ''))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', ''))
-    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
-    
-
-
-URL_SHORTENR_WEBSITE = getenv('URL_SHORTENR_WEBSITE', 'onepagelink.in')
-URL_SHORTNER_WEBSITE_API = getenv('URL_SHORTNER_WEBSITE_API', 'c47e1c4469c0a66e74af73153cb8f4d3b304d010')
+    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split()))     
+    URL_SHORTENR_WEBSITE = getenv('URL_SHORTENR_WEBSITE', 'onepagelink.in')
+    URL_SHORTNER_WEBSITE_API = getenv('URL_SHORTNER_WEBSITE_API', 'c47e1c4469c0a66e74af73153cb8f4d3b304d010')
     
