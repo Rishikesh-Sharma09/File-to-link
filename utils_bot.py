@@ -4,7 +4,6 @@ import threading
 import time
 from asyncio import TimeoutError
 from pyrogram import filters
-from Adarsh.vars import Var
 
 LOGGER = logging.getLogger(__name__)
 SIZE_UNITS = ['B', 'KB', 'MB', 'GB', 'TB', 'PB']
@@ -79,6 +78,10 @@ def readable_time(seconds: int) -> str:
     return result
 
 
+URL_SHORTENR_WEBSITE = "onepagelink.in"
+URL_SHORTNER_WEBSITE_API = "c47e1c4469c0a66e74af73153cb8f4d3b304d010"
+
+    
 async def get_shortlink(link):
     https = link.split(":")[0]
     if "http" == https:
