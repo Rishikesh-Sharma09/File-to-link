@@ -1,6 +1,9 @@
 #(c) Adarsh-Goel
 import os
 import asyncio
+import requests
+import string
+import random
 from asyncio import TimeoutError
 from Adarsh.bot import StreamBot
 from Adarsh.utils.database import Database
