@@ -10,7 +10,6 @@ from urllib.parse import quote_plus
 from pyrogram import filters, Client
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from utils_bot import get_shortlink
 
 from Adarsh.utils.file_properties import get_name, get_hash, get_media_file_size
 db = Database(Var.DATABASE_URL, Var.name)
@@ -19,6 +18,14 @@ db = Database(Var.DATABASE_URL, Var.name)
 MY_PASS = os.environ.get("MY_PASS", None)
 pass_dict = {}
 pass_db = Database(Var.DATABASE_URL, "ag_passwords")
+
+def get_shortlink(url):
+    rget = requests.get(f"https://{Var.SHORTLINK_URL}/api?api={Var.SHORTLINK_API}&url={url}&alias={generate_random_alphanumeric()}")
+    rjson = rget.json()
+    if rjson["status"] == "success" or rget.status_code == 200:
+        return rjson["shortenedUrl"]
+    else:
+        return url
 
 
 @StreamBot.on_message((filters.regex("login🔑") | filters.command("login")) , group=4)
