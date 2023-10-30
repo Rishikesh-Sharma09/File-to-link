@@ -117,7 +117,8 @@
          stream_links = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}" 
          online_links = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}" 
          stream_link = get_shortlink(stream_links) 
-         online_link = get_shortlink(online_links) 
+         online_link = get_shortlink(online_links)
+         tutorial = f"{Var.TUTORIAL_URL}"
   
          msg_text ="""<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n\n<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n\n<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n\n<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n\n<b> 🖥WATCH  :</b> <i>{}</i>\n\n<b>🚸 Nᴏᴛᴇ : LINK WILL NOT EXPIRE UNTIL I DELETE</b>""" 
   
@@ -126,9 +127,10 @@
              text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link), 
              quote=True, 
              disable_web_page_preview=True, 
-             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("STREAM 🖥", url=stream_link), #Stream Link 
-                                                 InlineKeyboardButton('DOWNLOAD 📥', url=online_link)]]) #Download Link 
-         ) 
+             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("STREAM 🖥", url=stream_link), #Stream Link
+                                                InlineKeyboardButton('DOWNLOAD 📥', url=online_link)],
+                                             [InlineKeyboardButton("HOW TO OPEN LINK", url=tutorial)]]) #Download Link
+        )
      except FloodWait as e: 
          print(f"Sleeping for {str(e.x)}s") 
          await asyncio.sleep(e.x) 
